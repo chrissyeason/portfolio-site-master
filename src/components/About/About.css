@@ -1,0 +1,11 @@
+#resume-container {
+    margin-left: 5%;
+}
+#download-link {
+    padding-top: 10%;
+    color: #205063;
+}
+
+#download-link:hover {
+    color: #3686a5;
+}

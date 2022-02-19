@@ -7,8 +7,9 @@
 }
 /* component show styles */
 .thumbnail-container {
-  display: flex;
-  width: 100vw;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  /* width: 100vw; */
   /* margin-top: 5%; */
   justify-content: center;
 }
@@ -22,7 +23,7 @@
   width: 100%;
 }
 .thumbnail-container img{
-  width: 33%;
+  width: 100%;
 }
 .show-page {
   width: 90%;

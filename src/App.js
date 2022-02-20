@@ -5,15 +5,13 @@ import Navigation from './components/Navigation/Navigation';
 import DoCoolShit from './components/DoCoolShit/DoCoolShit';
 import CakePlease from './components/CakePlease/CakePlease';
 import MeowWoof from './components/MeowWoof/MeowWoof';
-import Toggle from './Toggle';
-import DoCoolShitThumbnail from './components/DoCoolShit/thumbnail.jpg';
-import CakePleaseThumbnail from './components/CakePlease/thumbnail-cake-please.jpg';
-import MeowWoofThumbnail from './components/MeowWoof/thumbnail.jpg';
 import AddThumbButtons from './AddThumbButtons';
-import LaVolpe from './components/LaVolpe/LaVolpe';
-import CedarDoor from './components/CedarDoor/CedarDoor';
-import Camp from './components/Camp/Camp';
 import Slack from './components/Slack/Slack';
+import TechToolkit from './components/BounldessToolkit/TechToolkit';
+import Encompass from './components/Encompass/Encompass';
+import Coinbase from './components/Coinbase/Coinbase';
+import Enhabit from './components/Enhabit/Enhabit';
+import MissionControl from './components/MissionControl/MissionControl';
 
 class App extends Component {
   constructor(){
@@ -23,106 +21,162 @@ class App extends Component {
   }
   
 }
-  componentDidMount = () => {
-    fetch('http://localhost:3000/projects')
-    .then(res =>res.json())
-    .then(projects=>this.setState({
-      projects: projects
-    }))
-    .catch(err=>console.log(err))
+  // componentDidMount = () => {
+  //   fetch('http://localhost:3000/projects')
+  //   .then(res =>res.json())
+  //   .then(projects=>this.setState({
+  //     projects: projects
+  //   }))
+  //   .catch(err=>console.log(err))
 
-    fetch(`https://meow-woof-app.herokuapp.com/`,
-    {mode: 'no-cors'})
-    .then(res=>console.log('woke up meowwoof'))
+  //   fetch(`https://meow-woof-app.herokuapp.com/`,
+  //   {mode: 'no-cors'})
+  //   .then(res=>console.log('woke up meowwoof'))
 
-    fetch(`https://do-cool-shit.herokuapp.com/`, 
-    {mode: 'no-cors'})
-    .then(res=>console.log('woke up do-cool-shit'))
-  }
+  //   fetch(`https://do-cool-shit.herokuapp.com/`, 
+  //   {mode: 'no-cors'})
+  //   .then(res=>console.log('woke up do-cool-shit'))
+  // }
   addSlack = () => {
     this.setState({
       ...this.state,
       isSlackStateEmpty: true,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false,
-      isLaVolpeEmpty: false,
-      isCedarDoorEmpty: false,
-      isCampEmpty: false,
+      isCakeStateEmpty: false
+    })
+    console.log('add slack was pressed')
+  }
+  addTechToolkit = () => {
+    this.setState({
+      ...this.state,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: true,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false
+      // isLaVolpeEmpty: false,
+      // isCedarDoorEmpty: false,
+    })
+    console.log('toolkit was pressed')
+  }
+  addEncompass = () => {
+    this.setState({
+      ...this.state,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: true,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false
+    })
+  }
+  addCoinbase = () => {
+    this.setState({
+      ...this.state,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: true,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false
+    })
+  }
+  addEnhabit = () => {
+    this.setState({
+      ...this.state,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: true,
+      isMissionControlStateEmpty: false,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false
+    })
+  }
+  addMissionControl = () => {
+    this.setState({
+      ...this.state,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: true,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false
     })
   }
   addCool = () => {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
       isCoolStateEmpty: true,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false,
-      isLaVolpeEmpty: false,
-      isCedarDoorEmpty: false,
-      isCampEmpty: false,
+      isCakeStateEmpty: false
+      // isLaVolpeEmpty: false,
+      // isCedarDoorEmpty: false,
+      // isCampEmpty: false,
     })
   }
   addMeow = () => {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isMeowStateEmpty: true,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
-      isCakeStateEmpty: false,
-      isLaVolpeEmpty: false,
-      isCedarDoorEmpty: false,
-      isCampEmpty: false,
+      isMeowStateEmpty: true,
+      isCakeStateEmpty: false
+      // isLaVolpeEmpty: false,
+      // isCedarDoorEmpty: false,
+      // isCampEmpty: false,
     })
   }
   addCake = () => {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isMeowStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
-      isCakeStateEmpty: true,
-      isLaVolpeEmpty: false,
-      isCedarDoorEmpty: false,
-      isCampEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: true
+      // isLaVolpeEmpty: false,
+      // isCedarDoorEmpty: false,
+      // isCampEmpty: false,
     })
   }
-  addLaVolpe = () => {
-    this.setState({
-      ...this.state,
-      isSlackStateEmpty: false,
-      isMeowStateEmpty: false,
-      isCoolStateEmpty: false,
-      isCakeStateEmpty: false,
-      isLaVolpeEmpty: true,
-      isCedarDoorEmpty: false,
-      isCampEmpty: false,
-    })
-  }
-  addCedarDoor = () => {
-    this.setState({
-      ...this.state,
-      isSlackStateEmpty: false,
-      isMeowStateEmpty: false,
-      isCoolStateEmpty: false,
-      isCakeStateEmpty: false,
-      isLaVolpeEmpty: false,
-      isCedarDoorEmpty: true,
-      isCampEmpty: false,
-    })
-  }
-  addCamp = () => {
-    this.setState({
-      ...this.state,
-      isSlackStateEmpty: false,
-      isMeowStateEmpty: false,
-      isCoolStateEmpty: false,
-      isCakeStateEmpty: false,
-      isLaVolpeEmpty: false,
-      isCedarDoorEmpty: false,
-      isCampEmpty: true,
-    })
-  }
+
   render(){
     return (
       <div className="App">
@@ -130,6 +184,21 @@ class App extends Component {
           <div >   
           {
             this.state.isSlackStateEmpty && <Slack />
+          }
+          {
+            this.state.isTechToolkitStateEmpty && <TechToolkit />
+          }
+          {
+            this.state.isEncompassStateEmpty && <Encompass />
+          }
+          {
+            this.state.isCoinbaseStateEmpty && <Coinbase />
+          }
+          {
+            this.state.isEnhabitStateEmpty && <Enhabit />
+          }
+          {
+            this.state.isMissionControlStateEmpty && <MissionControl />
           }
           {
             this.state.isCoolStateEmpty && <DoCoolShit />
@@ -141,23 +210,20 @@ class App extends Component {
           {
             this.state.isCakeStateEmpty && <CakePlease />
           }
-          {
-            this.state.isLaVolpeEmpty && <LaVolpe />
-          }
-          {
-            this.state.isCedarDoorEmpty && <CedarDoor />
-          }
-          {
-            this.state.isCampEmpty && <Camp />
-          }
+          
           <AddThumbButtons className="thumbnail-container"
                 addSlack={this.addSlack}
+                addTechToolkit={this.addTechToolkit}
+                addEncompass={this.addEncompass}
+                addCoinbase={this.addCoinbase}
+                addEnhabit={this.addEnhabit}
+                addMissionControl={this.addMissionControl}
                 addCool={this.addCool} 
                 addMeow={this.addMeow} 
                 addCake={this.addCake}
-                addLaVolpe={this.addLaVolpe}
-                addCedarDoor={this.addCedarDoor}
-                addCamp={this.addCamp}
+                // addLaVolpe={this.addLaVolpe}
+                // addCedarDoor={this.addCedarDoor}
+                // addCamp={this.addCamp}
                 />
                 
           </div>

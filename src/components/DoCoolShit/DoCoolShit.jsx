@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 // import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 // import './About.css';
-import DoCoolShitThumbnail from './thumbnail.jpg';
 import AdventureHomepage from './adventure-home-page.jpg';
 import AdventureShowpage from './adventure-show-modal.jpg';
-import AdventureChatpage from './chat-page.jpg'
+import AdventureChatpage from './chat-page.jpg';
+
 class DoCoolShit extends Component{
     constructor(props){
         super(props);

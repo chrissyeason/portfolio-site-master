@@ -6,7 +6,7 @@ import CedarDoorThumbnail from './components/CedarDoor/CedarDoor-logo-wood-sm.jp
 import LaVolpeThumbnail from './components/LaVolpe/LaVolpe-logo-sm.jpg';
 import CampThumbnail from './components/Camp/Camp-Poster1-sm.jpg';
 import SlackThumbnail from './components/Slack/Slack-thumbnail-drinkware-01.png';
-import TechToolkitThumbnail from './components/BounldessToolkit/boundless-tool-kit-thumbnail.png';
+import TechToolkitThumbnail from './components/BounldessToolkit/boundless-tool-kit-thumbnail2.png';
 import EncompassThumbnail from './components/Encompass/Encompass-thumbnail.png';
 import CoinbaseThumbnail from './components/Coinbase/coinbase-thumbnail-3.png';
 import EnhabitThumbnail from './components/Enhabit/enhabit-thumbnail.png';
@@ -16,18 +16,19 @@ function AddThumbButton(props){
     return(
         <div>
             <div className="thumbnail-container">
-                <img src={SlackThumbnail} onclick={props.addSlack} />
-                <img src={TechToolkitThumbnail} onclick={props.addTechToolkit} />
-                <img src={EncompassThumbnail} onclick={props.addEncompass} />
-                <img src={CoinbaseThumbnail} onclick={props.addCoinbase} />
-                <img src={EnhabitThumbnail} onclick={props.addEnhabit} />
-                <img src={MissionControlThumbnail} onclick={props.addMissionControl} />
+                <img src={SlackThumbnail} onClick={props.addSlack} />
+                <img src={TechToolkitThumbnail} onClick={props.addTechToolkit} />
+                <img src={EncompassThumbnail} onClick={props.addEncompass} />
+                <img src={CoinbaseThumbnail} onClick={props.addCoinbase} />
+                <img src={EnhabitThumbnail} onClick={props.addEnhabit} />
+                <img src={MissionControlThumbnail} onClick={props.addMissionControl} />
+                <img src={DoCoolShitThumbnail} onClick={props.addCool} />
+                <img src={MeowWoofThumbnail} color="white" onClick={props.addMeow} />
+                <img src={CakePleaseThumbnail} color="white" onClick={props.addCake} />
             </div>
         
         {/* <div className="thumbnail-container-2nd-row"> */}
-            {/* <img src={DoCoolShitThumbnail} onClick={props.addCool} /> */}
-            {/* <img src={MeowWoofThumbnail} color="white" onClick={props.addMeow} /> */}
-            {/* <img src={CakePleaseThumbnail} color="white" onClick={props.addCake} /> */}
+            
             {/* <img src={CedarDoorThumbnail} onClick={props.addCedarDoor}/> */}
             {/* <img src={LaVolpeThumbnail} onClick={props.addLaVolpe}/> */}
             {/* <img src={CampThumbnail} onClick={props.addCamp}/> */}

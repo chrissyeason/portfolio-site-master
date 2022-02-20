@@ -25,12 +25,24 @@
 .thumbnail-container img{
   width: 100%;
 }
+/* ----------- component page styles ---------- */
 .show-page {
   width: 90%;
-  padding: 10%;
-  margin-left: 10%;
+  padding: 3%;
+  margin: auto;
+  text-align: center;
 }
-
+.description {
+  padding-top: 5%;
+  text-align: left;
+  padding-left: 5%;
+}
+.description h2 {
+  text-align: left;
+  color: #205063;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 2.5%;
+}
 .description a {
   color: #205063;
   margin-top: 10px;
@@ -40,20 +52,13 @@
   font-size: 1rem;
   padding-right: 8%;
   font-family: 'Lato', sans-serif;
-}
-.description {
-  padding: 0 20% 3% 0%;
-}
-.description h2 {
   text-align: left;
-  color: #205063;
-  font-family: 'Lato', sans-serif;
-  margin-bottom: 2.5%;
 }
 .img-container img{
   max-width: 90%;
   margin-bottom: 15px;
   border: solid #e0e0e0 1px;
+  text-align: center;
 }
 #signage {
   padding-left: 5%;

@@ -6,9 +6,7 @@ import indexPage from './index-page.jpg';
 import DogListPage from './dog-list-page.jpg';
 
 class MeowWoof extends Component{
-    constructor(props){
-        super(props);
-    }
+    
     scrollToTop = () => {
         document.querySelector('#top-page').scrollIntoView({
             behavior: 'smooth'

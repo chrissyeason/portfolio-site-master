@@ -3,13 +3,13 @@ import SlackHomepage from './Slack-Homepage-01.png';
 import SlackRegionsPage from './Slack-region-page-01.png';
 import SlackSalesRegionPage from './slack-3.png';
 
+
 class Slack extends Component {
     
     scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
+        document.querySelector('#top-page').scrollIntoView({
             behavior: 'smooth'
-        })
+        });
     }
     componentDidMount(){
         this.scrollToTop()    
@@ -24,7 +24,7 @@ class Slack extends Component {
                         that would direct their user to the proper SSO depending on where they live. 
                         It fits perfectly within their branding guidelines. Responsible for design and 
                         development.</p>
-                        <a href="https://bn-missionctrl.s3.amazonaws.com/missionCtrl/slack/Code-for-LandingPage/index.html" target="_blank">slackswagmarketplace.com</a>
+                        <a href="https://bn-missionctrl.s3.amazonaws.com/missionCtrl/slack/Code-for-LandingPage/index.html" target="_blank">View slackswagmarketplace.com</a>
                     </div>
 
                     <div className="img-container">

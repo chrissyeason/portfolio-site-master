@@ -19,8 +19,9 @@ class TechToolkit extends Component {
             <div className="show-page" id="top-page">
                     <div className="description">
                         <h2>Boundless Technology Toolkit</h2>
-                        <p>This site introduces and describes the ins and outs Portal, Boundless's proprietary software, to potential new sales reps joining the company. Responsible for design and development.</p>
-                        <a href="https://bn-missionctrl.s3.amazonaws.com/Boundless-TechToolKit/code/index.html#top" target="_blank">boundless tech toolkit</a>
+                        <p>This site describes the ins and outs of Portal, Boundless's proprietary software, 
+                            to potential new sales reps joining the company. <br/>Responsible for the design and development.</p>
+                        <a href="https://bn-missionctrl.s3.amazonaws.com/Boundless-TechToolKit/code/index.html#top" target="_blank">View Toolkit Site</a>
                     </div>
 
                     <div className="img-container">

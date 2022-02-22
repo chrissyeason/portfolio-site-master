@@ -16,8 +16,8 @@ class Coinbase extends Component {
             <div className="show-page" id="top-page">
                 <div className="description">
                     <h2>Coinbae MKT</h2>
-                    <p>This landing page allows buyers to shop multiple ways. Responsible for design and development. </p>
-                    <a href="https://files.boundlessnetwork.com/missionCtrl/Coinbase/Coinbase-Merchandise-Homepage/index.html" target="_blank" rel="noopener noreferrer">coinbaemkt.com</a>
+                    <p>This landing page allows buyers to shop multiple ways. Responsible for the design and development. </p>
+                    <a href="https://files.boundlessnetwork.com/missionCtrl/Coinbase/Coinbase-Merchandise-Homepage/index.html" target="_blank" rel="noopener noreferrer">View coinbaemkt.com</a>
                 </div>
 
                 <div className="img-container">

@@ -1,5 +1,5 @@
 import React from 'react';
-import DoCoolShitThumbnail from './components/DoCoolShit/thumbnail.jpg';
+import DoCoolShitThumbnail from './components/DoCoolShit/DCS-thumbnail.png';
 import MeowWoofThumbnail from './components/MeowWoof/thumbnail.jpg';
 import CakePleaseThumbnail from './components/CakePlease/thumbnail-cake-please.jpg';
 import CedarDoorThumbnail from './components/CedarDoor/CedarDoor-logo-wood-sm.jpg';
@@ -10,21 +10,22 @@ import TechToolkitThumbnail from './components/BounldessToolkit/boundless-tool-k
 import EncompassThumbnail from './components/Encompass/Encompass-thumbnail.png';
 import CoinbaseThumbnail from './components/Coinbase/coinbase-thumbnail-3.png';
 import EnhabitThumbnail from './components/Enhabit/enhabit-thumbnail.png';
-import MissionControlThumbnail from './components/MissionControl/MC-thumbnail-01.png';
+import MissionControlThumbnail from './components/MissionControl/MC-thumbnail-2-01.png';
+
 
 function AddThumbButton(props){
     return(
         <div>
             <div className="thumbnail-container">
-                <img src={SlackThumbnail} onClick={props.addSlack} />
                 <img src={TechToolkitThumbnail} onClick={props.addTechToolkit} />
                 <img src={EncompassThumbnail} onClick={props.addEncompass} />
                 <img src={CoinbaseThumbnail} onClick={props.addCoinbase} />
-                <img src={EnhabitThumbnail} onClick={props.addEnhabit} />
+                <img src={SlackThumbnail} onClick={props.addSlack}/>
                 <img src={MissionControlThumbnail} onClick={props.addMissionControl} />
+                <img src={EnhabitThumbnail} onClick={props.addEnhabit} />
                 <img src={DoCoolShitThumbnail} onClick={props.addCool} />
                 <img src={MeowWoofThumbnail} color="white" onClick={props.addMeow} />
-                <img src={CakePleaseThumbnail} color="white" onClick={props.addCake} />
+                <img src={CakePleaseThumbnail} onClick={props.addCake} />
             </div>
         
         {/* <div className="thumbnail-container-2nd-row"> */}

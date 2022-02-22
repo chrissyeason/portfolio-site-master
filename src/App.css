@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
   /* width: 100vw; */
-  /* margin-top: 5%; */
+  margin-top: 5%;
   justify-content: center;
 }
 .thumbnail-container-2nd-row {
@@ -29,6 +29,7 @@
 .show-page {
   width: 90%;
   padding: 3%;
+  padding-top: 5%;
   margin: auto;
   text-align: center;
 }
@@ -73,6 +74,11 @@
 }
 .thumbnail img:hover {
   background-color: rgba(0,0,0,.5);
+}
+.arrow {
+  max-width: 12px;
+  margin-left: 18px;
+  margin-bottom: 2px;
 }
 
 

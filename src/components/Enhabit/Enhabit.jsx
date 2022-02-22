@@ -19,7 +19,7 @@ class Enhabit extends Component {
                 <div className="description">
                     <h2>Enhabit Brand Merchandise Shop</h2>
                     <p>This landing page houses multiple buying resources. Responsible for design and development.</p>
-                    <a href="" target="_blank">view enhabit landing page</a>
+                    <a href="" target="_blank">View Enhabit site</a>
                 </div>
 
                 <div className="img-container">

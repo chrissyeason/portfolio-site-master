@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import TechToolkitPage from './boundless-tool-kit.png';
 
 class TechToolkit extends Component {
-    constructor(props) {
-        super(props);
-    }
+    
     scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -16,7 +14,7 @@ class TechToolkit extends Component {
     }
     render() {
         return(
-            <div className="show-page" id="top-page">
+            <div className="show-page">
                     <div className="description">
                         <h2>Boundless Technology Toolkit</h2>
                         <p>This site describes the ins and outs of Portal, Boundless's proprietary software, 

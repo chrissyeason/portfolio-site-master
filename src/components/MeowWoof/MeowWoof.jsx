@@ -28,9 +28,9 @@ class MeowWoof extends Component {
             users to login and save their foster pet's information to the
             database and view other available pets.
           </p>
-          <a href="https://meow-woof-app.herokuapp.com/" target="_blank">
+          {/* <a href="https://meow-woof-app.herokuapp.com/" target="_blank">
             View Meow Woof site
-          </a>
+          </a> */}
           <br />
           <a
             href="https://github.com/chrissyeason/Animal-AdoptionApp"

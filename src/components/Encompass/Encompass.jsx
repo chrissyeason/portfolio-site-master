@@ -2,13 +2,12 @@ import React, {Component} from 'react';
 import EncompassLandingPage from './Encompass-landingpage.jpg';
 
 class Encompass extends Component{
-    constructor(props) {
-        super(props);
-    }
-
+    
     scrollToTop = () => {
-        document.querySelector('#top-page').scrollIntoView({
-            behavior: 'smooth'
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth' 
         });
     }
     componentDidMount(){
@@ -16,7 +15,7 @@ class Encompass extends Component{
     }
     render() {
         return(
-            <div className="show-page" id="top-page">
+            <div className="show-page">
                 <div className="description">
                     <h2>Encompass Health Branded Merchandise Hub</h2>
                     <p>This landing page houses multiple buying platforms. It fits perfectly within their branding guidelines. <br/> Responsible for the design and development.</p>

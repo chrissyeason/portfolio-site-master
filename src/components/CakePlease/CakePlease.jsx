@@ -5,12 +5,12 @@ import CakePleaseHomepage from './homepage-cake-love.jpg';
 import RecipesPage from './recipes-page.jpg';
 
 class CakePlease extends Component{
-    constructor(props){
-        super(props);
-    }
+    
     scrollToTop = () => {
-        document.querySelector('#top-page').scrollIntoView({
-            behavior: 'smooth'
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth' 
         });
     }
     componentDidMount(){
@@ -25,6 +25,7 @@ class CakePlease extends Component{
                     <h2>Cake Please Recipes App</h2>
                         <p>Ruby on Rails is combined a with PostgreSQL database and React to build this full stack application 
                             that allows the cake community to collaborate by uploading their own recipes.</p>
+                        <a href="https://github.com/chrissyeason/Cake-Please-" target="_blank">github.com/chrissyeason/Cake-Please-</a>
                 </div>
                 <div className="img-container">
                     <img src={CakePleaseHomepage}/>

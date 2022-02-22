@@ -7,8 +7,10 @@ import SlackSalesRegionPage from './slack-3.png';
 class Slack extends Component {
     
     scrollToTop = () => {
-        document.querySelector('#top-page').scrollIntoView({
-            behavior: 'smooth'
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth' 
         });
     }
     componentDidMount(){
@@ -16,7 +18,7 @@ class Slack extends Component {
     }
     render() {
         return(
-            <div className="show-page" id="top-page">
+            <div className="show-page">
                     <div className="description">
                         <h2>Slack Swag Marketplace Landing Page</h2>
                         <p>This landing page allows buyers to shop by user group type and region. 

@@ -6,10 +6,7 @@ import AdventureShowpage from './adventure-show-modal.jpg';
 import AdventureChatpage from './chat-page.jpg';
 
 class DoCoolShit extends Component{
-    constructor(props){
-        super(props);
     
-    }
     scrollToTop = () => {
         window.scroll({
             top: 0, 
@@ -23,7 +20,7 @@ class DoCoolShit extends Component{
     render(){
 
       return(       
-            <div className="show-page"  id="top-page">
+            <div className="show-page">
                    
                     <div className="description">
                     <h2>Do Cool Shit Adventure App</h2>
@@ -31,7 +28,7 @@ class DoCoolShit extends Component{
                             photos of places they've gone and adventures they have had. 
                             It uses Express and Mongodb as the back-end and ReactJS for the front-end. 
                             Once the user is logged in, there is an addtional chat feature that uses Socket.io.</p>
-                        <a href="https://do-cool-shit.herokuapp.com/" target="_blank">do-cool-shit.herokuapp.com</a>
+                        {/* <a href="https://do-cool-shit.herokuapp.com/" target="_blank">do-cool-shit.herokuapp.com</a> */}
                         <br/>
                         <a href="https://github.com/chrissyeason/Adventure-App/" target="_blank">github.com/chrissyeason/Adventure-App</a>
                         

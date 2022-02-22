@@ -4,8 +4,10 @@ import CoinbaseLandingPage from './coinbase-landingpage.jpg';
 class Coinbase extends Component {
     
     scrollToTop = () => {
-        document.querySelector('#top-page').scrollIntoView({
-            behavior: 'smooth'
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth' 
         });
     }
     componentDidMount(){
@@ -13,7 +15,7 @@ class Coinbase extends Component {
     }
     render() {
         return(
-            <div className="show-page" id="top-page">
+            <div className="show-page" >
                 <div className="description">
                     <h2>Coinbae MKT</h2>
                     <p>This landing page allows buyers to shop multiple ways. Responsible for the design and development. </p>

@@ -27,7 +27,6 @@ class MissionControl extends Component {
                 <div className="img-container">
                     <img src={MCHomepage} />
                     <img src={MCCustomDesignPage} />
-                    <img src={MCPortPage} />
                 </div>
             </div>
         )

@@ -5,6 +5,10 @@
 .App-header {
   
 }
+/* -------- navigation styles ------------ */
+.nav-bar h4:hover {
+  cursor: pointer;
+}
 /* component show styles */
 .thumbnail-container {
   display: grid;
@@ -29,7 +33,6 @@
 .show-page {
   width: 90%;
   padding: 3%;
-  padding-top: 5%;
   margin: auto;
   text-align: center;
 }

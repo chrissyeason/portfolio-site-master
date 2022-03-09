@@ -37,6 +37,26 @@ class App extends Component {
   //   {mode: 'no-cors'})
   //   .then(res=>console.log('woke up do-cool-shit'))
   // }
+  returnToHomeState = () => {
+    this.setState({
+      ...this.state,
+      isStateEmpty: true,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false
+    })
+    window.scroll({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  }
   addSlack = () => {
     this.setState({
       ...this.state,
@@ -180,7 +200,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-          <Navigation />
+          <Navigation returnToHomeState={this.returnToHomeState} />
           <div >   
           {
             this.state.isSlackStateEmpty && <Slack />
@@ -203,7 +223,6 @@ class App extends Component {
           {
             this.state.isCoolStateEmpty && <DoCoolShit />
           }
-          
           {
             this.state.isMeowStateEmpty && <MeowWoof />
           }

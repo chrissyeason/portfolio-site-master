@@ -12,6 +12,9 @@ import Encompass from './components/Encompass/Encompass';
 import Coinbase from './components/Coinbase/Coinbase';
 import Enhabit from './components/Enhabit/Enhabit';
 import MissionControl from './components/MissionControl/MissionControl';
+import Camp from './components/Camp/Camp';
+import LaVolpe from './components/LaVolpe/LaVolpe';
+import CedarDoor from './components/CedarDoor/CedarDoor';
 
 class App extends Component {
   constructor(){
@@ -49,7 +52,10 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
     window.scroll({
       top: 0, 
@@ -68,7 +74,10 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
     console.log('add slack was pressed')
   }
@@ -83,9 +92,10 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false
-      // isLaVolpeEmpty: false,
-      // isCedarDoorEmpty: false,
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
     console.log('toolkit was pressed')
   }
@@ -100,7 +110,10 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
   }
   addCoinbase = () => {
@@ -114,7 +127,10 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
   }
   addEnhabit = () => {
@@ -142,7 +158,10 @@ class App extends Component {
       isMissionControlStateEmpty: true,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
   }
   addCool = () => {
@@ -156,10 +175,10 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: true,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false
-      // isLaVolpeEmpty: false,
-      // isCedarDoorEmpty: false,
-      // isCampEmpty: false,
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
   }
   addMeow = () => {
@@ -173,10 +192,10 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: true,
-      isCakeStateEmpty: false
-      // isLaVolpeEmpty: false,
-      // isCedarDoorEmpty: false,
-      // isCampEmpty: false,
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
   }
   addCake = () => {
@@ -190,13 +209,64 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: true
-      // isLaVolpeEmpty: false,
-      // isCedarDoorEmpty: false,
-      // isCampEmpty: false,
+      isCakeStateEmpty: true,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
   }
-
+  addLaVolpe = () => {
+    this.setState({
+      ...this.state,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: true,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
+    })
+  }
+  addCedarDoor = () => {
+    this.setState({
+      ...this.state,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: true,
+      isCampStateEmpty: false,
+    })
+  }
+  addCamp = () => {
+    this.setState({
+      ...this.state,
+      isSlackStateEmpty: false,
+      isTechToolkitStateEmpty: false,
+      isEncompassStateEmpty: false,
+      isCoinbaseStateEmpty: false,
+      isEnhabitStateEmpty: false,
+      isMissionControlStateEmpty: false,
+      isCoolStateEmpty: false,
+      isMeowStateEmpty: false,
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: true,
+    })
+    console.log('camp was pressed')
+  }
   render(){
     return (
       <div className="App">
@@ -229,7 +299,15 @@ class App extends Component {
           {
             this.state.isCakeStateEmpty && <CakePlease />
           }
-          
+          {
+            this.state.isLaVolpeStateEmpty && <LaVolpe />
+          }
+          {
+            this.state.isCedarDoorStateEmpty && <CedarDoor />
+          }
+          {
+            this.state.isCampStateEmpty && <Camp />
+          }
           <AddThumbButtons className="thumbnail-container"
                 addSlack={this.addSlack}
                 addTechToolkit={this.addTechToolkit}
@@ -240,9 +318,9 @@ class App extends Component {
                 addCool={this.addCool} 
                 addMeow={this.addMeow} 
                 addCake={this.addCake}
-                // addLaVolpe={this.addLaVolpe}
-                // addCedarDoor={this.addCedarDoor}
-                // addCamp={this.addCamp}
+                addLaVolpe={this.addLaVolpe}
+                addCedarDoor={this.addCedarDoor}
+                addCamp={this.addCamp}
                 />
                 
           </div>

@@ -7,7 +7,7 @@ import CakePlease from './components/CakePlease/CakePlease';
 import MeowWoof from './components/MeowWoof/MeowWoof';
 import AddThumbButtons from './AddThumbButtons';
 import Slack from './components/Slack/Slack';
-import TechToolkit from './components/BounldessToolkit/TechToolkit';
+import WingStop from './components/WingStop/WingStop';
 import Encompass from './components/Encompass/Encompass';
 import Coinbase from './components/Coinbase/Coinbase';
 import Enhabit from './components/Enhabit/Enhabit';
@@ -45,7 +45,7 @@ class App extends Component {
       ...this.state,
       isStateEmpty: true,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -67,7 +67,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: true,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -81,11 +81,11 @@ class App extends Component {
     })
     console.log('add slack was pressed')
   }
-  addTechToolkit = () => {
+  addWingStop = () => {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: true,
+      isWingStopStateEmpty: true,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -103,7 +103,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: true,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -120,7 +120,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: true,
       isEnhabitStateEmpty: false,
@@ -137,7 +137,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: true,
@@ -151,7 +151,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -168,7 +168,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -185,7 +185,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -202,7 +202,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -219,7 +219,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -236,7 +236,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -253,7 +253,7 @@ class App extends Component {
     this.setState({
       ...this.state,
       isSlackStateEmpty: false,
-      isTechToolkitStateEmpty: false,
+      isWingStopStateEmpty: false,
       isEncompassStateEmpty: false,
       isCoinbaseStateEmpty: false,
       isEnhabitStateEmpty: false,
@@ -276,7 +276,7 @@ class App extends Component {
             this.state.isSlackStateEmpty && <Slack />
           }
           {
-            this.state.isTechToolkitStateEmpty && <TechToolkit />
+            this.state.isWingStopStateEmpty && <WingStop />
           }
           {
             this.state.isEncompassStateEmpty && <Encompass />
@@ -310,7 +310,7 @@ class App extends Component {
           }
           <AddThumbButtons className="thumbnail-container"
                 addSlack={this.addSlack}
-                addTechToolkit={this.addTechToolkit}
+                addWingStop={this.addWingStop}
                 addEncompass={this.addEncompass}
                 addCoinbase={this.addCoinbase}
                 addEnhabit={this.addEnhabit}

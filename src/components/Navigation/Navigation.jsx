@@ -7,8 +7,8 @@ function Navigation(props){
     return(
         <div className="nav-bar">
             <div className="nav-header-left">
-                <h4 onClick={props.returnToHomeState}>Chrissy Eason</h4>
-                <h5>frontend developer | designer</h5>
+                <h4 onClick={props.returnToHomeState}>Chrissy Eason <span>frontend developer | designer</span></h4>
+                {/* <h5>frontend developer | designer</h5> */}
             </div>
             
             <div className="nav-right">

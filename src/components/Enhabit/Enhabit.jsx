@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import EnhabitLandingPage from './Enhabit-LandingPageDesign-01.png';
-
+import EnhabitTraining from './Enhabit-Portal-User-Guide_Page_1.jpg'
 class Enhabit extends Component {
     
     scrollToTop = () => {
@@ -24,6 +24,7 @@ class Enhabit extends Component {
 
                 <div className="img-container">
                     <img src={EnhabitLandingPage} />
+                    <img src={EnhabitTraining} />
                 </div>
             </div>
         )

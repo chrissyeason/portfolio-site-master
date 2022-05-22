@@ -35,9 +35,10 @@
   padding: 3%;
   margin: auto;
   text-align: center;
+  max-width: 1000px;
+
 }
 .description {
-  padding-top: 5%;
   text-align: left;
   padding-left: 5%;
 }

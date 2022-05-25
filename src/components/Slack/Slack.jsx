@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import SlackHomepage from './Slack-Homepage-01.png';
 import SlackRegionsPage from './Slack-region-page-01.png';
-import SlackSalesRegionPage from './slack-3.png';
+import SlackToggleGif from './slack-details-toggle.gif';
 
 
 class Slack extends Component {
@@ -32,7 +32,7 @@ class Slack extends Component {
                     <div className="img-container">
                         <img src={SlackHomepage} />
                         <img src={SlackRegionsPage} />
-                        <img src={SlackSalesRegionPage} />
+                        <img src={SlackToggleGif} />
                     </div>
                 
             </div>

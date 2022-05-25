@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import MCHomepage from './MC-hompage.png';
+import MCHomepage from './MC-hompage-cropped.png';
 import MCPortPage from './MC-portalPage.png';
 import MCCustomDesignPage from './MC-customDesignPage.png';
+import MCHomepageHoverButton from './mc-hover-button-enlarge.gif';
+import MCdropdown from './mc-dropdown.gif';
 
 class MissionControl extends Component {
     
@@ -26,6 +28,7 @@ class MissionControl extends Component {
 
                 <div className="img-container">
                     <img src={MCHomepage} />
+                    <img src={MCdropdown} alt="dropdown effect" />
                     <img src={MCCustomDesignPage} />
                 </div>
             </div>

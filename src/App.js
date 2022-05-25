@@ -144,7 +144,10 @@ class App extends Component {
       isMissionControlStateEmpty: false,
       isCoolStateEmpty: false,
       isMeowStateEmpty: false,
-      isCakeStateEmpty: false
+      isCakeStateEmpty: false,
+      isLaVolpeStateEmpty: false,
+      isCedarDoorStateEmpty: false,
+      isCampStateEmpty: false,
     })
   }
   addMissionControl = () => {

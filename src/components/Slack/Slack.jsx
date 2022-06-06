@@ -31,7 +31,11 @@ class Slack extends Component {
 
                     <div className="img-container">
                         <img src={SlackHomepage} />
+                    </div>
+                    <div className="img-container">
                         <img src={SlackRegionsPage} />
+                    </div>
+                    <div className="img-container">
                         <img src={SlackToggleGif} />
                     </div>
                 

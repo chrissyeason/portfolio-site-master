@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import ResumeDownload from '../components/About/ChrissyEason-2022.pdf';
+import ResumeDownload from '../components/About/ChrissyEason-resume-2022.pdf';
 
 class Contact extends Component{
     constructor(props){

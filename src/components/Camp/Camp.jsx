@@ -32,14 +32,16 @@ class Camp extends Component {
                 </div>
                 <div className="img-container">
                     <img src={CampHomepage1} />
-                </div> 
+                </div>
+
                 <div className="img-container">
                     <img src={CampHomepage2}/>
                 </div>
+
                 <div className="img-container">
                     <img src={CampAccomodationsPage}/>
                 </div>
-                
+
             </div>        
         )  
     }  

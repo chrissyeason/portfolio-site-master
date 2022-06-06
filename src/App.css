@@ -68,13 +68,16 @@
 #signage {
   padding-left: 5%;
 }
+.LV-img-container {
+  text-align: center;
+}
 .LV-img-container img {
   max-width: 85%;
   margin-bottom: 15px;
-  border: none;
 }
 .img-container {
   margin-top: 8%;
+  text-align: center;
 }
 .thumbnail img:hover {
   background-color: rgba(0,0,0,.5);

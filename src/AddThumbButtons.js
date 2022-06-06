@@ -18,15 +18,17 @@ function AddThumbButton(props){
         <div>
             <div className="thumbnail-container">
                 <img src={EnhabitThumbnail} onClick={props.addEnhabit} />
-  
-                <img src={EncompassThumbnail} onClick={props.addEncompass} />
-                <img src={CoinbaseThumbnail} onClick={props.addCoinbase} />
                 <img src={SlackThumbnail} onClick={props.addSlack}/>
                 <img src={MissionControlThumbnail} onClick={props.addMissionControl} />
-                <img src={WingStopThumbnail} onClick={props.addWingStop} />
+
                 <img src={DoCoolShitThumbnail} onClick={props.addCool} />
                 <img src={MeowWoofThumbnail} color="white" onClick={props.addMeow} />
                 <img src={CakePleaseThumbnail} onClick={props.addCake} />
+
+                <img src={EncompassThumbnail} onClick={props.addEncompass} />
+                <img src={CoinbaseThumbnail} onClick={props.addCoinbase} />
+                <img src={WingStopThumbnail} onClick={props.addWingStop} />
+
                 <img src={CampThumbnail} onClick={props.addCamp} />
                 <img src={CedarDoorThumbnail} onClick={props.addCedarDoor} />
                 <img src={LaVolpeThumbnail} onClick={props.addLaVolpe} />

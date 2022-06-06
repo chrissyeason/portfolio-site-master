@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import EnhabitLandingPage from './Enhabit-LandingPageDesign-01.png';
-import EnhabitTraining from './Enhabit-Portal-User-Guide_Page_1.jpg'
+import EnhabitTraining from './Enhabit-Portal-User-Guide_Page_1.jpg';
+import EnhabitPortal from './enhabit-portal-homepage.png';
+
 class Enhabit extends Component {
     
     scrollToTop = () => {
@@ -18,13 +20,20 @@ class Enhabit extends Component {
             <div className="show-page">
                 <div className="description">
                     <h2>Enhabit Brand Merchandise Shop</h2>
-                    <p>This landing page houses multiple buying options for Enhabit branded merchandise. (Formerly Encompass Health.) Responsible for the design and development.</p>
+                    <p>The Enhabit landing page houses multiple buying options for Enhabit branded merchandise, as well as, some training documents for buyers. 
+                        The design of the Portal store hero banner, category images, and Portal User Guide are modern and on brand. (Formerly Encompass Health) 
+                        Responsible for the design and development.</p>
                     <a href="https://bn-missionctrl.s3.amazonaws.com/missionCtrl/Enhabit/Shop-Enhabit/index.html" target="_blank">View Enhabit site</a>
                 </div>
 
                 <div className="img-container">
-                    <img src={EnhabitLandingPage} />
-                    <img src={EnhabitTraining} />
+                    <img src={EnhabitLandingPage} alt="enhabit landingpage"/>
+                </div>
+                <div className="img-container">
+                    <img src={EnhabitPortal} alt="enhabit portal homepage screenshot" />
+                </div>
+                <div className="img-container">
+                    <img src={EnhabitTraining} alt="enhabit training document"/>
                 </div>
             </div>
         )

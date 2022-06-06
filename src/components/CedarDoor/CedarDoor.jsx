@@ -7,13 +7,10 @@ import EventBrochure3 from './CedarDoor-brochure-pg3.jpg';
 import Signage from './CedarDoor-HappyHourSign.jpg';
 
 class CedarDoor extends Component{
-    constructor(props){
-        super(props);
-    
-    }
     scrollToTop = () => {
-        document.querySelector('#top-page').scrollIntoView({
-            behavior: 'smooth'
+        window.scroll({
+            top: 0, 
+            behavior: 'smooth' 
         });
     }
     componentDidMount(){
@@ -26,28 +23,20 @@ class CedarDoor extends Component{
                     <body>
                         <div className="description">
                         <h2>Cedar Door Restaurant</h2>
-                            <p>Signage and branding updates.
+                            <p>A local, Austin staple, Cedar Door Patio Bar & Grill, needed a digital, event brochure to pass out to 
+                                prospective buyers, as well as some signage.
                             </p>
                             
                             
                         </div>
-                        <div className="LV-img-container">
+                        <div className="LV-img-container img-container">
                             <img src={CedarDoorLogo}/>
                         </div> 
                         
-                        <div className="LV-img-container">
+                        <div className="LV-img-container img-container">
                             <img src={EventBrochureCover}/>
-                        </div>
-
-                        <div className="LV-img-container">
                             <img src={EventBrochure1}/>
-                        </div>
-
-                        <div className="LV-img-container">
-                            <img src={EventBrochure2}/>
-                        </div>
-
-                        <div className="LV-img-container">
+                            {/* <img src={EventBrochure2}/> */}
                             <img src={EventBrochure3}/>
                         </div>
 

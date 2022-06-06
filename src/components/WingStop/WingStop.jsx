@@ -16,8 +16,8 @@ class WingStop extends Component {
             <div className="show-page">
                 <div className="description">
                     <h2>Wingstop Brightsites Store</h2>
-                    <p>Brightsites is one of the many ecommerce platforms that I work with. I added custom
-                        code to the existing software to ensure the store follows the Wingstop's brand standards.
+                    <p>Brightsites is one of the many ecommerce platforms that I often work with. It uses the Liquid templating language. I customized the 
+                        code to ensure the store follows the Wingstop's brand standards and also added some additional features to the homepage.
                     </p>
                 </div>
                 <div className="img-container">
